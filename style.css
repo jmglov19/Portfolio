@@ -1,0 +1,576 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, img, ins, kbd, q, s, samp,
+small, strike, sub, sup, tt, var,
+center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	border: 0;
+	font: inherit;
+    font-family: Arial;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: inline-block;
+}
+body {
+	line-height: 2;
+    font-size: 20px;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+@font-face{
+	font-family: 'HistoraBeralin';
+	src: url("fonts/HistoraBeralin.otf") format("opentype");
+}
+/*
+    Personal Changing after Meyer Reset
+*/
+
+body{
+    background-color: white;
+    color: black;
+}
+
+
+em{
+    text-decoration: underline;
+}
+
+/*
+    Headers Styling
+*/
+
+h1{
+    text-align: center;
+    font-size: 400%;
+    color: black;
+    font-family: 'HistoraBeralin', Verdana, Arial, sans-serif;
+}
+
+h2{
+    
+    text-align: center;
+    font-size: 200%;
+    
+}
+
+h3{
+    color: white;
+    text-align: left;
+    font-size: 200%;
+    margin-left: 0%;
+    margin-right: 65%;
+    background-color: #a7a2af;
+    text-transform: uppercase;
+}
+
+
+
+
+
+
+/*
+Buttons
+*/
+
+button{
+    font-size: 20px;
+    background-color: rgb(70, 62, 77);
+    color: white;
+    text-align: center;
+}
+
+
+
+
+
+/*
+    Nav
+*/
+
+
+
+
+
+nav{
+    display: inline-block;
+    margin-right: 3%;
+}
+
+
+header{
+    position: fixed;
+    overflow: hidden;
+    display: inline-block;
+    background-color: #dee2e5;
+    width:100%;
+    padding-top: 5px;
+    
+
+}
+
+footer{
+    position: absolute;
+    overflow: hidden;
+    display: inline-block;
+    background-color: #dee2e5;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+}
+
+#page-container {
+    position: relative;
+    min-height: 30vh;
+    }
+    
+#content-wrap {
+    padding-bottom: 2.5rem;    /* Footer height */
+    }
+
+
+
+#nav1{
+    float: right;
+}
+
+#name{
+    color: black;
+    font-size: 35px;
+    font-family: 'HistoraBeralin';
+    padding-left: 20px;
+    float: left;
+}
+
+#logoname{
+    float: left;
+    font-family: 'HistoraBeralin';
+    margin-left: 10px;
+}
+
+#footer{
+    float: left;
+    font-size: 20px;
+}
+
+/*
+    Front
+*/
+
+#front{
+    margin-top: 5%;
+    width: 100%;
+}
+
+#frontName{
+    float: right;
+    text-align: center;
+    font-size: 350%;
+    color: #a7a2af;
+}
+/*
+    Table
+*/
+
+dl{
+    color: white;
+    background-color:#6da67b;
+    margin-right: 80%;
+    margin-left: 5%;
+
+}
+dt {
+    font-weight: bold;
+    text-decoration: underline;
+}
+dd {
+    margin: 0;
+    padding: 0 0 0.5em 0;
+}
+
+table{
+    color:black;
+    background-color: white;
+    border-spacing: 10px;
+}
+tr{
+    border: 3px solid black;
+}
+th{
+    border:3px solid black;
+    padding: 10px;
+    font-weight: 700;
+    font-size: 200%;
+}
+
+
+
+/*
+    Lists
+*/
+
+ol {
+    color: white;
+    list-style-type: upper-roman;
+    background-color:#6da67b;;
+    margin-right: 80%;
+    margin-left: 5%;
+}
+
+ul li {
+    display: inline-block;
+    padding: 3px;
+}
+
+#links{
+    padding: 0px;
+    margin: 0px;
+}
+
+/*
+    Forms and Inputs
+*/
+
+
+
+input {
+    font-size: 120%;
+    color: #5a5854;
+    background-color: #f2f2f2;
+    border: 1px solid #bdbdbd;
+    border-radius: 5px;
+    padding: 5px 5px 5px 30px;
+    background-repeat: no-repeat;
+    background-position: 8px 9px;
+    margin-bottom: 10px;}
+
+input:focus, input:hover {
+    background-color: #ffffff;
+    border: 1px solid #b1e1e4;
+}
+
+form{
+    background-color: #a7a2af;
+    color: white;
+    margin-left: 20%;
+    margin-right: 20%;
+    border-radius: 25px;
+    padding: 10px;
+}
+
+#centerform{
+    margin-left: 20%;
+    margin-right: 15%;
+}
+
+#email {
+    background-image: url("email.png");}
+
+#submit{
+    font-size: 20px;
+    background-color: rgb(70, 62, 77);
+    color: white;
+    text-align: center;
+    padding: 5px 5px 5px 5px;
+}
+
+/*
+    Pictures
+
+*/
+
+
+
+#logo{
+    width: 75px;
+    height: 75px;
+    float: left
+}
+
+
+#logoBig{
+    height: 200px;
+    width: 200px;
+}
+
+
+#github{
+    width:40px;
+    height:40px;
+
+}
+
+#slu{
+    float: left;
+    margin-right: 10px;
+}
+
+#tools{
+    float: right;
+    width: 100px; 
+    height: 100px;
+}
+#soccer{
+    width: 150px;
+    height: 150px;
+    vertical-align: top;
+}
+
+#insta{
+    width: 40px;
+    height: 40px;
+}
+
+#linkedin{
+    width: 37px;
+    height: 37px;
+}
+
+#IRD{
+    float: left;
+    margin-right: 10px;
+}
+
+#AV{
+    float: right;
+    margin-left: 10px;
+}
+
+#PK{
+    float: left;
+    margin-right: 10px;
+}
+
+#tsd{
+    float: right;
+    margin-left: 10px;
+}
+
+/*
+    Paragraphs
+*/
+
+
+
+
+#par1{
+    text-align: center;
+    font-size: 350%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    background-color:#6da67b;
+    border-radius: 25px;
+    text-transform: capitalize;
+}
+
+#ab{
+    font-size: 20px;
+    background-color: rgb(70, 62, 77);
+    color: white;
+    text-align: center;
+    padding: 10px
+}
+#par2{
+    padding: 10px;
+}
+
+#about{
+    
+    padding: 10px;
+    display: block;
+    color: black;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 120%;
+    width: 60%;
+}
+
+#featprojects{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+
+    }
+#skills{
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    height: 10%;
+    background-color: #dee2e5;
+    font-size: 130%;
+    box-shadow: 3px 10px black;
+    border-radius: 20px;
+}
+
+#special{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    height: 100%;
+
+}
+
+
+/*
+            CLASSES
+*/
+.projects{
+    display: inline-block;
+    width: 24.5%;
+    /*
+    
+    height: 210px;
+    width: 372px;
+    border-radius: 50px;
+    */
+
+}
+
+.par1{
+    padding: 10px;
+    display: block;
+    color: black;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10%;
+  }
+
+
+.centerprojects{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3%;
+    width: 95%;
+    height: 100%;
+    
+    
+
+    
+}
+.centerText{
+    margin-left: auto;
+    margin-right: auto;
+    width: 5%;
+
+}
+
+.red{
+    display: inline-block;
+    background-color: red;
+    padding: 10px;
+    margin: 10px
+}
+
+.green{
+    display: inline-block;
+    background-color: green;
+    padding: 10px;
+    margin: 10px
+}
+
+.tabs{
+    color: black;
+    text-decoration: none;
+}
+
+.block{
+    text-align: center;
+    flex: auto;
+    width: 32%;
+    padding: 5px;
+    display: inline-block;
+    background-color: #a7a2af;
+    height: 100%;
+    border-radius: 20px;
+    font-size: 30px;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    box-shadow: 3px 10px black;
+
+}
+
+.projpage{
+    color: black;
+    font-size: 30px;
+    padding: 10px;
+}
+
+.projectrect{
+    display: block;
+    width: 40%;
+}
+
+.rectangle{
+    width: 100%;
+}
+
+
+.parent {
+   /* border: 1px solid black;
+   */
+    margin: 1rem;
+    
+    text-align: center;
+  }
+
+.child {
+display: inline-block;
+/*border: 1px solid red;
+*/
+padding: 1rem 1rem;
+vertical-align: middle;
+width: 40%;
+}
+
+.project-titles{
+    font-size: 200%;
+    text-align: left;
+
+}
+
+.top{
+    padding-top: 4%;
+}
