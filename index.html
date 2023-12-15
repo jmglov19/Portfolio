@@ -26,7 +26,7 @@
 
     <body>
         <header>
-            <div id = "logoname">
+            <div class = "child" id = "logoname">
                 <a onclick="document.location='index.html'">
                     <img src="images/Logo.png", id="logo", alt="Logo">
                 </a>
@@ -34,7 +34,7 @@
                 <h1 id="name">John Glover</h1>
             </div>
             
-            <nav id = "nav1">
+            <nav id = "nav1" class="child">
                 
                 <ul>             
                     
@@ -48,7 +48,7 @@
                         
                     </li>
                     <li>
-
+    
                         <a class="tabs" href="services.html"> Services </a> 
                         
                     </li>
@@ -58,23 +58,22 @@
                                            
                     </li>
                     
-                    <li>
-                        <ul id="links">
-                            <li>
-                                <a href="https://github.com/jmglov19", target="_blank">
-                                    <img src = "images/github.png", alt="GitHub", id = "github">
-                                    </a>
-                            </li>
-                            
-                            <li>
-                                <img src = "images/insta.png", id = "insta">
-                            </li>
-                            <li>
-                                <img src = "images/linkedin.png", id = "linkedin">
-                            </li>
-                        </ul>
-
+                    
+                    <li class="icons">
+                        <a href="https://github.com/jmglov19", target="_blank">
+                            <img src = "images/github.png", alt="GitHub", id = "github">
+                            </a>
                     </li>
+                    
+                    <li class="icons">
+                        <img src = "images/insta.png", id = "insta">
+                    </li>
+                    <li class="icons">
+                        <a href="https://www.linkedin.com/in/john-glover-926043274/", target="_blank">
+                        <img src = "images/linkedin.png", id = "linkedin">
+                        </a>
+                    </li>
+                
                 </ul>
             </nav>
         </header>
@@ -82,7 +81,7 @@
         <img id="front" src="images/front.png">
         
        
-        
+       
         <section id="featprojects">
             <h3 id = "h3"> <b>Featured Projects</b></h3>
             <div class="centerprojects">
@@ -98,11 +97,13 @@
                 <img src="images/PokerBot.png", id ="PK", class="projects", alt="Poker Bot">
                 </a>
 
-                <a onclick="document.location='project-webpages/tsd.html'">
+                <a onclick="document.location='project-webpages/av.html'">
                 <img src="images/ALG.png", id="tsd", class="projects", alt="Train Station Database">  
                 </a> 
             </div>
+
         </section>
+
         
         <br/>
         
@@ -136,18 +137,16 @@
             <div id="content-wrap">
     
                 <footer>
-                    <h1 id="footer">
-                        Created by John Glover
-                    </h1>
-                    <img src="images/Logo.png" style="float: right;" id="logo">
+                    <div style="float: left; margin: 2%;">
+                        <h1 style="font-size: 1.5vw;">
+                            Created by John Glover December 2023
+                        </h1>
+                        <p style="font-size: 1vw; float:left;"> Go to my contact page if you have any questions</p>
+                    </div>
+                    
+                    <img src="images/Logo.png" style="float: right;" width="10%" padding="5%">
                 </footer> 
-            </div>     
-
-
-
-
-
-            
+            </div>         
         </div>
 
     </body>

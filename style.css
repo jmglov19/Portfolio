@@ -50,6 +50,26 @@ table {
 	font-family: 'HistoraBeralin';
 	src: url("fonts/HistoraBeralin.otf") format("opentype");
 }
+
+/*
+    parent & child and styling from w3schools
+*/
+.parent {
+    /* border: 1px solid black;
+    */
+     margin: 1rem;
+     text-align: center;
+   }
+ 
+ .child {
+ display: inline-block;
+ /*border: 1px solid red;
+ */
+ padding: 1rem 1rem;
+
+ vertical-align: middle;
+ width: 40%;
+ }
 /*
     Personal Changing after Meyer Reset
 */
@@ -68,24 +88,28 @@ em{
     Headers Styling
 */
 
+p{
+    font-size: 1.5vw;
+}
+
 h1{
     text-align: center;
-    font-size: 400%;
+    font-size: 5vw;
     color: black;
-    font-family: 'HistoraBeralin', Verdana, Arial, sans-serif;
+    
 }
 
 h2{
-    
-    text-align: center;
-    font-size: 200%;
+    text-decoration: underline;
+    font-size: 4vw;
+    font-family: 'HistoraBeralin', Verdana, Arial, sans-serif;
     
 }
 
 h3{
     color: white;
     text-align: left;
-    font-size: 200%;
+    font-size: 3vw;
     margin-left: 0%;
     margin-right: 65%;
     background-color: #a7a2af;
@@ -122,17 +146,19 @@ button{
 
 nav{
     display: inline-block;
-    margin-right: 3%;
+    padding: 0;
 }
 
 
 header{
+    text-align: center;
     position: fixed;
     overflow: hidden;
     display: inline-block;
     background-color: #dee2e5;
     width:100%;
-    padding-top: 5px;
+    margin: 0;
+
     
 
 }
@@ -144,7 +170,7 @@ footer{
     background-color: #dee2e5;
     bottom: 0;
     width: 100%;
-    height: 100px;
+    
 }
 
 #page-container {
@@ -153,18 +179,22 @@ footer{
     }
     
 #content-wrap {
-    padding-bottom: 2.5rem;    /* Footer height */
+    padding-bottom: 3rem;    /* Footer height */
     }
 
 
 
 #nav1{
     float: right;
+    width: 50%;
+    padding-bottom: 0;
+    padding-left: 10%;
+    padding-top: 1%;
 }
 
 #name{
     color: black;
-    font-size: 35px;
+    font-size: 2.5vw;
     font-family: 'HistoraBeralin';
     padding-left: 20px;
     float: left;
@@ -173,7 +203,11 @@ footer{
 #logoname{
     float: left;
     font-family: 'HistoraBeralin';
-    margin-left: 10px;
+    width: 30%;
+    padding: 1%;
+    padding-bottom: 0;
+
+
 }
 
 #footer{
@@ -245,9 +279,17 @@ ol {
     margin-left: 5%;
 }
 
-ul li {
+ul{
+    padding: 0;
+}
+
+li {
     display: inline-block;
     padding: 3px;
+    font-size: 1.5vw;
+    margin: 1%;
+    margin-bottom: 0;
+    padding-bottom: 0;
 }
 
 #links{
@@ -310,8 +352,7 @@ form{
 
 
 #logo{
-    width: 75px;
-    height: 75px;
+    width: 15%;
     float: left
 }
 
@@ -323,8 +364,7 @@ form{
 
 
 #github{
-    width:40px;
-    height:40px;
+    width: 100%;
 
 }
 
@@ -344,35 +384,15 @@ form{
     vertical-align: top;
 }
 
-#insta{
-    width: 40px;
-    height: 40px;
+#insta{width: 100%;
+    
 }
 
 #linkedin{
-    width: 37px;
-    height: 37px;
+    width: 100%;
 }
 
-#IRD{
-    float: left;
-    margin-right: 10px;
-}
 
-#AV{
-    float: right;
-    margin-left: 10px;
-}
-
-#PK{
-    float: left;
-    margin-right: 10px;
-}
-
-#tsd{
-    float: right;
-    margin-left: 10px;
-}
 
 /*
     Paragraphs
@@ -430,27 +450,27 @@ form{
     width: 60%;
     height: 10%;
     background-color: #dee2e5;
-    font-size: 130%;
+    font-size: 1vw;
     box-shadow: 3px 10px black;
     border-radius: 20px;
 }
 
 #special{
     display: block;
-    margin-left: auto;
+    margin-left: 8%;
     margin-right: auto;
-    width: 80%;
+    width: 90%;
     height: 100%;
 
 }
 
 
 /*
-            CLASSES
+            CLASSES Lionel-4861-?!? 2351 450
 */
 .projects{
     display: inline-block;
-    width: 24.5%;
+    width: 24%;
     /*
     
     height: 210px;
@@ -480,11 +500,12 @@ form{
 
 .centerprojects{
     display: block;
-    margin-left: auto;
+    margin: 2%;
     margin-right: auto;
     margin-top: 3%;
-    width: 95%;
+    width: 98%;
     height: 100%;
+
     
     
 
@@ -519,13 +540,13 @@ form{
 .block{
     text-align: center;
     flex: auto;
-    width: 32%;
+    width: 30%;
     padding: 5px;
     display: inline-block;
     background-color: #a7a2af;
     height: 100%;
     border-radius: 20px;
-    font-size: 30px;
+    font-size: 2vw;
     color: white;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
     box-shadow: 3px 10px black;
@@ -548,25 +569,10 @@ form{
 }
 
 
-.parent {
-   /* border: 1px solid black;
-   */
-    margin: 1rem;
-    
-    text-align: center;
-  }
 
-.child {
-display: inline-block;
-/*border: 1px solid red;
-*/
-padding: 1rem 1rem;
-vertical-align: middle;
-width: 40%;
-}
 
 .project-titles{
-    font-size: 200%;
+    font-size:2vw;
     text-align: left;
 
 }
@@ -574,3 +580,40 @@ width: 40%;
 .top{
     padding-top: 4%;
 }
+
+.project-pics{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.icons{
+    width: 5.5%;
+    margin: 0.5%;
+    margin-bottom: 0;
+    padding-bottom: 0;
+
+}
+
+/*
+    From W3Schools on how to make I frames responsive
+    https://www.w3schools.com/howto/howto_css_responsive_iframes.asp
+
+.container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) 
+  }
+  
+  /* Then style the iframe to fit in the container div with full height and width 
+  .responsive-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+*/

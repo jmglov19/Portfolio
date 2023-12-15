@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="en-US">
+<lang lang="en-US">
 
     <head>
         <meta charset="utf-8">
@@ -11,65 +11,133 @@
           href="https://fonts.googleapis.com/css?family=Tangerine">
     </head>
 
-    <body>
-        <header>
-            <div id = "logoname">
-                <a onclick="document.location='../index.html'">
-                    <img src="../images/Logo.png", id="logo", alt="Logo">
-                </a>
+    <header>
+        <div class = "child" id = "logoname">
+            <a onclick="document.location='../index.html'">
+                <img src="../images/Logo.png", id="logo", alt="Logo">
+            </a>
+            
+            <h1 id="name">John Glover</h1>
+        </div>
+        
+        <nav id = "nav1" class="child">
+            
+            <ul>             
                 
-                <h1 id="name">John Glover</h1>
+                <li>
+                    <a class="tabs" href="../about.html"> About </a>               
+                    
+                </li>
+                <li>
+                    
+                    <a class="tabs" href="../projects.html"> Projects </a> 
+                    
+                </li>
+                <li>
+
+                    <a class="tabs" href="../services.html"> Services </a> 
+                    
+                </li>
+                <li>
+                    
+                    <a class="tabs" href="../contact.html"> Contact </a> 
+                                       
+                </li>
+                
+                
+                <li class="icons">
+                    <a href="https://github.com/jmglov19", target="_blank">
+                        <img src = "../images/github.png", alt="GitHub", id = "github">
+                        </a>
+                </li>
+                
+                <li class="icons">
+                    <img src = "../images/insta.png", id = "insta">
+                </li>
+                <li class="icons">
+                    <a href="https://www.linkedin.com/in/john-glover-926043274/", target="_blank">
+                        <img src = "../images/linkedin.png", id = "linkedin">
+                        </a>
+                </li>
+            
+            </ul>
+        </nav>
+    </header>
+
+        
+        <br class="top">
+        <br class="top">
+        <div class="parent">
+            <div class="child">
+                <h1>Instrument Rental Database</h1>
+            </div>
+
+            <div class="child">
+           
+                <img src="irdPics/BobsLogo-John-Recovered.png" class="project-pics">
+            </div>
+        </div>
+    <br>
+    </br>
+        <div class="parent">
+            <div class="child">
+                <img src="irdPics/bobs1.png" class="project-pics">
             </div>
             
-            <nav id = "nav1">
-                
-                <ul>             
+            <div class="child">
+                <h2> The Purpose</h2>
+                <p style="text-align: right;">
                     
-                    <li>
-                        <a class="tabs" href="../about.html"> About </a>               
-                        
-                    </li>
-                    <li>
-                        
-                        <a class="tabs" href="../projects.html"> Projects </a> 
-                        
-                    </li>
-                    <li>
 
-                        <a class="tabs" href="../services.html"> Services </a> 
-                        
-                    </li>
-                    <li>
-                        
-                        <a class="tabs" href="../contact.html"> Contact </a> 
-                                           
-                    </li>
-                    <li>
+                    The IRD is a database that I developed for Bob’s Music. The database is for keeping record of all owned instruments, 
+                    all current and past customers, and which customers have which instruments.
+    
+                    Before this was done by receipts that were printed on paper and then thrown into a binder. Whenever information 
+                    was needed it had to be retrieved from a binder with over 300 papers in it that were usually not sorted at all. 
+                    Obviously this was a big time waste and had the high likelihood to lose things. That is why I was asked to build 
+                    this system. It would speed up the renting process severely and reduce the chance of information being lost.
+                </p>
+            </div>
+        </div>
 
-                        <a class="tabs" href="../extrapractice.html"> Extras </a> 
-                        
-                    </li>
-                    <li>
-                        <ul id="links">
-                            <li>
-                                <a href="https://github.com/jmglov19", target="_blank">
-                                    <img src = "../images/github.png", alt="GitHub", id = "github">
-                                    </a>
-                            </li>
-                            
-                            <li>
-                                <img src = "../images/insta.png", id = "insta">
-                            </li>
-                            <li>
-                                <img src = "../images/linkedin.png", id = "linkedin">
-                            </li>
-                        </ul>
 
-                    </li>
-                </ul>
-            </nav>
-        </header>
+        <div class="parent">
+            <div class="child">
+                <h2>The Execution</h2>
+                <p style="text-align: left;">
+                    The database was built with Microsoft’s SQL Server and hosted on a server I set up 
+                    in the office with an old laptop. Therefore the database can be accessed by the owner 
+                    whenever and wherever necessary. The interface was done in Python Using Tkinter. 
+                    It allows the entry of new instruments, customers, and new “tickets” to assign an 
+                    instrument to a customer in the database. There is also the ability to look up all 
+                    relevant information of an instrument, a customer, or what instrument is associated with 
+                    what customer. There is also the ability to edit this information within the GUI
+                </p>
+               
+            </div>
+            
+            <div class="child">
+                
 
-        <h1>Instrument Renatal Database</h1>
+                <img src="irdPics/bobs3.png" class="project-pics">
+            </div>
+        </div>
+            
+        <div id="page-container">
+            <div id="content-wrap">
+    
+                <footer>
+                    <div style="float: left; margin: 2%;">
+                        <h1 style="font-size: 1.5vw;">
+                            Created by John Glover December 2023
+                        </h1>
+                        <p style="font-size: 1vw; float:left;"> Go to my contact page if you have any questions</p>
+                    </div>
+                    
+                    <img src="../images/Logo.png" style="float: right;" width="10%" padding="5%">
+                </footer> 
+            </div>         
+        </div>
     </body>
+
 </html>

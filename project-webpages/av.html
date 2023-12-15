@@ -3,6 +3,7 @@
 <html lang="en-US">
 
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta charset="utf-8">
         <title>John Glover Portfolio</title>
         <link href="../style.css" type="text/css" rel="stylesheet" >
@@ -13,7 +14,7 @@
 
     <body>
         <header>
-            <div id = "logoname">
+            <div class = "child" id = "logoname">
                 <a onclick="document.location='../index.html'">
                     <img src="../images/Logo.png", id="logo", alt="Logo">
                 </a>
@@ -21,7 +22,7 @@
                 <h1 id="name">John Glover</h1>
             </div>
             
-            <nav id = "nav1">
+            <nav id = "nav1" class="child">
                 
                 <ul>             
                     
@@ -35,7 +36,7 @@
                         
                     </li>
                     <li>
-
+    
                         <a class="tabs" href="../services.html"> Services </a> 
                         
                     </li>
@@ -44,32 +45,113 @@
                         <a class="tabs" href="../contact.html"> Contact </a> 
                                            
                     </li>
-                    <li>
-
-                        <a class="tabs" href="../extrapractice.html"> Extras </a> 
-                        
+                    
+                    
+                    <li class="icons">
+                        <a href="https://github.com/jmglov19", target="_blank">
+                            <img src = "../images/github.png", alt="GitHub", id = "github">
+                            </a>
                     </li>
-                    <li>
-                        <ul id="links">
-                            <li>
-                                <a href="https://github.com/jmglov19", target="_blank">
-                                    <img src = "../images/github.png", alt="GitHub", id = "github">
-                                    </a>
-                            </li>
-                            
-                            <li>
-                                <img src = "../images/insta.png", id = "insta">
-                            </li>
-                            <li>
-                                <img src = "../images/linkedin.png", id = "linkedin">
-                            </li>
-                        </ul>
-
+                    
+                    <li class="icons">
+                        <img src = "../images/insta.png", id = "insta">
                     </li>
+                    <li class="icons">
+                        <a href="https://www.linkedin.com/in/john-glover-926043274/", target="_blank">
+                            <img src = "../images/linkedin.png", id = "linkedin">
+                            </a>
+                    </li>
+                
                 </ul>
             </nav>
         </header>
+        <br class="top">
+        <br class="top">
+        <div class="parent">
+            <div class="child">
+                <h1>Dijikstra Algorithm Viewer</h1>
+            </div>
+
+            <div class="child">
+           
+                <img src="avPics/AV.png"  class="project-pics">
+            </div>
+        </div>
+        <br>
+        </br>
+        <div class="parent">
+            <div class="child">
+
+                <img src="avPics/av1.png"  class="project-pics">
+            </div>
+            
+            <div class="child">
+                <h2> The Purpose</h2>
+                <p style="text-align: right;">
+                    The purpose of this web app is to be a visual representation of Dijkstra’s shortest path algorithm. 
+                    This algorithm finds the shortest distance between a start and end node trying all possible paths showing 
+                    that sometimes the most straightforward path is not always the fastest. The user inputs a start node and an 
+                    end node then the program finds the shortest algorithm and then returns the shortest path and visually shows the 
+                    user on the page.    
+
+                
+
+                </p>
+            </div>
+        </div>
+
+
+        <div class="parent">
+            <div class="child">
+                <h2>The Execution</h2>
+                <p style="text-align: left;">
+                    The Dijkstra Algorithm Viewer is a web app that allows the user to place nodes on the page and then connect them, 
+                    assigning a distance of how far each point is. This is not a visual representation of distance but a distance that 
+                    is set to each connection between each node. This allows the user to set any distance.
+                    
+                    
+                    
+                </p>
+                <br>
+                <p style="text-align: left;">
+                    This web app was co-developed for the final project in Graph Theory at St. Lawrence University with Phillip Maphey. Try it out below!
+                </p>
+                <br>
+                
+               
+            </div>
+            
+            <div class="child">
+                
+
+                <img src="avPics/av2.png" class="project-pics">
+            </div>
+        </div>
+    <!--
+        <div class="container">
+            <iframe class="responsive-iframe" src="https://pamaph20.github.io/AlgorithmViewer/"></iframe>
+        </div>
+    -->
+        <iframe src="https://pamaph20.github.io/AlgorithmViewer/" width=100% height=900px title="Iframe Example"></iframe>
         
-        <h1>Algorithm Viewer</h1>
+        <p style="text-align: left; margin-left: 3%;">
+            https://pamaph20.github.io/AlgorithmViewer/
+        </p>
+            
+        <div id="page-container">
+            <div id="content-wrap">
+    
+                <footer>
+                    <div style="float: left; margin: 2%;">
+                        <h1 style="font-size: 1.5vw;">
+                            Created by John Glover December 2023
+                        </h1>
+                        <p style="font-size: 1vw; float:left;"> Go to my contact page if you have any questions</p>
+                    </div>
+                    
+                    <img src="../images/Logo.png" style="float: right;" width="10%" padding="5%">
+                </footer> 
+            </div>         
+        </div>
     </body>
 </html>
