@@ -507,10 +507,21 @@ form{
     height: 100%;
 
     
-    
-
-    
 }
+
+/*
+    tackoverflow.com/questions/39068128/how-can-i-make-a-textarea-that-fits-within-the-width-of-the-current-viewport
+*/
+
+textarea {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    width: 100%;
+}
+
+
 .centerText{
     margin-left: auto;
     margin-right: auto;
